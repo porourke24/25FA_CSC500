@@ -102,15 +102,15 @@ def print_menu(cart: ShoppingCart):
             quantity = int(input("Enter the new quantity: "))
             cart.modify_item(ItemToPurchase(name=name, quantity=quantity))
         elif choice == "i":
-            # Step 6: Output items' descriptions
+            # STEP 6: Output Items' Descriptions
             print("OUTPUT ITEMS' DESCRIPTIONS")
             cart.print_descriptions()
         elif choice == "o":
-            # Step 6: Output shopping cart
+            # STEP 6: Output Shopping Cart
             print("OUTPUT SHOPPING CART")
             cart.print_total()
         else:
-            # Invalid option: silently show menu again per spec
+            # For invalid input, just loop and show the menu again (no extra text)
             continue
 
 
